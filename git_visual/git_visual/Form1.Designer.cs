@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.btn_1_user = new System.Windows.Forms.Button();
             this.btn_2_user = new System.Windows.Forms.Button();
@@ -42,52 +42,58 @@
             // 
             // chart1
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
-            this.chart1.Location = new System.Drawing.Point(342, 75);
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
+            this.chart1.Location = new System.Drawing.Point(513, 115);
+            this.chart1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
-            this.chart1.Size = new System.Drawing.Size(820, 271);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chart1.Series.Add(series2);
+            this.chart1.Size = new System.Drawing.Size(1230, 417);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
             // 
             // btn_1_user
             // 
-            this.btn_1_user.Location = new System.Drawing.Point(12, 28);
+            this.btn_1_user.Location = new System.Drawing.Point(18, 43);
+            this.btn_1_user.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_1_user.Name = "btn_1_user";
-            this.btn_1_user.Size = new System.Drawing.Size(75, 23);
+            this.btn_1_user.Size = new System.Drawing.Size(112, 35);
             this.btn_1_user.TabIndex = 1;
             this.btn_1_user.Text = "btn_1_user";
             this.btn_1_user.UseVisualStyleBackColor = true;
             // 
             // btn_2_user
             // 
-            this.btn_2_user.Location = new System.Drawing.Point(93, 28);
+            this.btn_2_user.Location = new System.Drawing.Point(140, 43);
+            this.btn_2_user.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_2_user.Name = "btn_2_user";
-            this.btn_2_user.Size = new System.Drawing.Size(75, 23);
+            this.btn_2_user.Size = new System.Drawing.Size(112, 35);
             this.btn_2_user.TabIndex = 2;
             this.btn_2_user.Text = "btn_2_user";
             this.btn_2_user.UseVisualStyleBackColor = true;
+            this.btn_2_user.Click += new System.EventHandler(this.btn_2_user_Click);
             // 
             // btn_clr
             // 
-            this.btn_clr.Location = new System.Drawing.Point(174, 28);
+            this.btn_clr.Location = new System.Drawing.Point(261, 43);
+            this.btn_clr.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_clr.Name = "btn_clr";
-            this.btn_clr.Size = new System.Drawing.Size(75, 23);
+            this.btn_clr.Size = new System.Drawing.Size(112, 35);
             this.btn_clr.TabIndex = 3;
             this.btn_clr.Text = "clr";
             this.btn_clr.UseVisualStyleBackColor = true;
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(12, 75);
+            this.richTextBox1.Location = new System.Drawing.Point(18, 115);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(237, 271);
+            this.richTextBox1.Size = new System.Drawing.Size(354, 415);
             this.richTextBox1.TabIndex = 4;
             this.richTextBox1.Text = "";
             // 
@@ -97,16 +103,18 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1281, 450);
+            this.ClientSize = new System.Drawing.Size(1922, 692);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.btn_clr);
             this.Controls.Add(this.btn_2_user);
             this.Controls.Add(this.btn_1_user);
             this.Controls.Add(this.chart1);
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
 
