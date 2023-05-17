@@ -55,6 +55,13 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="user_2\FileTemperatureDataReader.cs" />
+    <Compile Include="user_2\GraphycBuilder.cs" />
+    <Compile Include="user_2\ITemperatureDataPrinter.cs" />
+    <Compile Include="user_2\ITemperatureDataReader.cs" />
+    <Compile Include="user_2\RichTextBoxTemperatureDataPrinter.cs" />
+    <Compile Include="user_2\TemperatureChangeCalculator.cs" />
+    <Compile Include="user_2\TemperatureData.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
