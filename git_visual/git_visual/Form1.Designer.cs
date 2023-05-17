@@ -64,6 +64,7 @@
             this.btn_1_user.TabIndex = 1;
             this.btn_1_user.Text = "btn_1_user";
             this.btn_1_user.UseVisualStyleBackColor = true;
+            this.btn_1_user.Click += new System.EventHandler(this.btn_1_user_Click);
             // 
             // btn_2_user
             // 
